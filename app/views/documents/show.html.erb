@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<div>
+  <dt>Files</dt>
+  <dd>
+    <% @document.files.each do |file| %>
+      <%= link_to file.filename, file, target: :blank %>
+    <% end %>
+  </dd>
+</div>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>
