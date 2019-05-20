@@ -1,0 +1,11 @@
+<div>
+  <div class='title'>
+    <h2>File Transfer App</h2>
+  </div>
+  <div class='form'>
+    <%= form_tag({action: :upload}, multipart: true, id: "form") do%>
+      <%= file_field_tag 'picture', required: true %>
+      <%= submit_tag("Upload") %>
+    <% end %>
+  </div>
+</div>

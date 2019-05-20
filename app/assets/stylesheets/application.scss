@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ .title {
+   h2 {
+     text-align: center;
+     font-family: sans-serif;
+     color: #4e8673;
+   }
+ }
